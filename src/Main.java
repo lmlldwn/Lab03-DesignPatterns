@@ -14,7 +14,6 @@ public class Main {
         createPizzaMenu();
 
         Scanner scan = new Scanner(System.in);
-
         LOGGER.log(Level.INFO, "Order: ");
         String key = scan.nextLine();
 
@@ -40,7 +39,6 @@ public class Main {
 
     public static void addPizzaToMenu(String key, Pizza flavor, String shape, String size, String crust) {
         Pizza pizza = null;
-
         if ( flavor instanceof PepperoniFlavor ) {
             pizza = new PepperoniFlavor();
             pizza.setShape(shape);
